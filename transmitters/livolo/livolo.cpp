@@ -243,10 +243,10 @@ int main(int argc, char **argv)
   int errflg=0;
   int c, j;
   
-  Livolo liv(output_pin);
-  
   if (wiringPiSetup () == -1)
 		exit (1) ;
+
+  Livolo liv(output_pin);
 
    // Sort out the options first!
    //
